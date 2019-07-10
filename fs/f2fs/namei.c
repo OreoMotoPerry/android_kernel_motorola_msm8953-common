@@ -1080,7 +1080,7 @@ errout:
 	page_cache_release(cpage);
 	return ERR_PTR(res);
 }
-
+/*
 void kfree_put_link(struct dentry *dentry, struct nameidata *nd,
 		void *cookie)
 {
@@ -1088,7 +1088,7 @@ void kfree_put_link(struct dentry *dentry, struct nameidata *nd,
 	if (!IS_ERR(s))
 		kfree(s);
 }
-
+*/
 const struct inode_operations f2fs_encrypted_symlink_inode_operations = {
 	.readlink       = generic_readlink,
 	.follow_link    = f2fs_encrypted_follow_link,
